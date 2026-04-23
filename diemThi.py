@@ -1,9 +1,10 @@
 import httpx
 import time
+import getpass
 
-# Điền thông tin đăng nhập
-username = ""
-password = ""
+# Thông tin đăng nhập
+username = input("Nhập MSV: ")
+password = getpass.getpass("Nhập mật khẩu: ")
 
 # URL đăng nhập và lấy bảng điểm
 login_url = 'https://sinhvien1.tlu.edu.vn/education/oauth/token'  # URL đăng nhập
